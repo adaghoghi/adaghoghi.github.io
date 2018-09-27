@@ -1,0 +1,22 @@
+.rotate90 {
+    
+    transform: rotate(270deg);
+    
+}
+
+
+.center {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 25px;
+    background: url(paper.gif);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px; 
+    width: 243px;
+    height: 203px; 
+    
+}
