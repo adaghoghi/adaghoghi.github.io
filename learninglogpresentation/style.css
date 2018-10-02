@@ -1,0 +1,65 @@
+.element {
+    width: 100%;
+    height: 100%;
+    animation: pulse 5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        
+    background-color: #001F3F;
+        
+    }
+    
+    100% {
+        
+    background-color: #8B0000;
+        
+    }
+}
+
+@keyframes nudge {
+  
+    0% {
+        
+    transform: translate(200px, 0);
+        
+    }
+
+    100% {
+        
+    transform: translate(-200px, 0);
+        
+    }
+}
+
+html, body {
+    
+    height: 100%;
+    
+}
+
+iframe {
+    
+    animation: nudge 5s linear infinite alternate;
+    
+}
+
+.text {
+    
+    font-family: "Helvetica";
+    color: white;
+}
+
+#header {
+    
+    padding:15px;
+    font-family: "Helvetica";
+    color: white;
+}
+
+#trailer {
+    
+    margin-top: 8%;
+    
+}
