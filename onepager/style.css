@@ -2,9 +2,10 @@ nav {
     
     text-align: center;
     background-color: darkblue;
-    width: 420px;
+    width: 435px;
     margin: 0 auto;
     display: flex;
+    position: fixed;
 }
 
 
@@ -36,7 +37,6 @@ nav ul {
 #nav-wrapper li {
     
     display: inline;
-
     text-align: center;
     display: inline-block;
 }
