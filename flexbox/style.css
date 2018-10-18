@@ -1,0 +1,22 @@
+.flex-container {
+    
+    margin: 0;
+    padding 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.flex-item {
+    
+    list-style: none;
+    background-color: aqua;
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+    margin-top: 10px;
+    
+}

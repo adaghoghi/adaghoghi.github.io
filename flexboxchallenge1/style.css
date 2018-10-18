@@ -1,0 +1,42 @@
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  margin: 10px; 
+  background: red;
+  border-radius: 6px;
+  padding-bottom: 50px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+div.cards header {
+  background-color: grey;
+  height: 200px;
+  border-radius: 5px
+}
+
+.card ul li {
+  width: 250px;
+  height: 20px;
+  margin: 15px;
+  background-color: pink;
+}
+
+.card button {
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  margin-left: 15px;
+}
