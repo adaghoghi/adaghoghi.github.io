@@ -27,8 +27,7 @@ var button2 = document.getElementById('percent-button')
 button2.addEventListener('click', percentOf())
 
 function areaCircle(num) {
-	var num = document.getElementById("area-input").value;
-	
+	var num = document.getElementById("area-input").value; 
 	var x = num*num*Math.PI
 	var y = Math.round(x*100)/100
 	document.getElementById('solution').innerHTML = y;
