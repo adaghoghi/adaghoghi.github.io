@@ -43,3 +43,11 @@
 nav {
 	color: black;
 }
+
+p {
+	font-family: "Courier New"
+}
+
+.mockup:hover {
+			transform: scale(1.3)
+		}

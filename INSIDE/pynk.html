@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-Navbar-fixedToTop.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="style.css">
+	  
+	<link rel="shortcut icon" type="image/png" href="insideface.png"/>
+    
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'nsidenyc.myshopify.com',
+          storefrontAccessToken: '5dea2d8e0a2933548f0b86882601b102',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: [1494143926372],
+            node: document.getElementById('product-component-f2c0a80df9e'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "white tee"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-weight": "bold"
+      },
+      "description": {
+        "font-weight": "bold"
+      },
+      "price": {
+        "font-weight": "bold"
+      },
+      "compareAt": {
+        "font-size": "12px",
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "title": "cart",
+      "total": "subtotal",
+      "button": "checkout",
+      "empty": "your cart is empty :("
+    },
+    "styles": {
+      "button": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        },
+        "font-weight": "bold"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        ":hover": {
+          "color": "#000000"
+        },
+        "color": "#000000"
+      },
+      "emptyCart": {
+        "color": "#000000"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-weight": "bold"
+      },
+      "description": {
+        "font-weight": "bold"
+      },
+      "price": {
+        "font-weight": "bold"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        },
+        "font-weight": "bold"
+      }
+    }
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-weight": "bold"
+      },
+      "select": {
+        "font-weight": "bold"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+}
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
+	  
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'nsidenyc.myshopify.com',
+          storefrontAccessToken: '5dea2d8e0a2933548f0b86882601b102',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: [1494147465316],
+            node: document.getElementById('product-component-25970c75b33'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "maroon sweatshirt"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-weight": "bold"
+      },
+      "description": {
+        "font-weight": "bold"
+      },
+      "price": {
+        "font-weight": "bold"
+      },
+      "compareAt": {
+        "font-size": "12px",
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "title": "cart",
+      "total": "subtotal",
+      "button": "checkout",
+      "empty": "your cart is empty :("
+    },
+    "styles": {
+      "button": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        },
+        "font-weight": "bold"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        ":hover": {
+          "color": "#000000"
+        },
+        "color": "#000000"
+      },
+      "emptyCart": {
+        "color": "#000000"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-weight": "bold"
+      },
+      "description": {
+        "font-weight": "bold"
+      },
+      "price": {
+        "font-weight": "bold"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#000000",
+        ":hover": {
+          "background-color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#000000"
+        },
+        "font-weight": "bold"
+      }
+    }
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-weight": "bold"
+      },
+      "select": {
+        "font-weight": "bold"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+}
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>  
+	  
+    <title>INSIDE</title>
+  </head>
+  <body>
+	  <br>
+	 <div class="page-wrap">
+		<img src="insideface.png" width="120" height="120" class="image">
+	  <br>
+	<br>
+     <!-- Plug Bootstrap Nav Bar code here -->
+    <nav class="navbar navbar-expand-sm bg-white justify-content-center">
+	  <ul class="navbar-nav">
+		<li class="nav-item">
+		  <a class="nav-link" href="index.html">h o m e</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="blog.html">c o l l e c t i o n s</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="blog.html">b l o g</a>
+		</li>
+	  </ul>
+	</nav>
+	<img src="pynkmockuptee.png" height="350" class="mockup">
+    <img src="pynkmockup.png" height="400" class="mockup">
+	<style>
+		.mockup:hover {
+			transform: scale(1.3)
+		}
+		 </style>
+	<p style="font-weight: bold; font-size: 16px">$20</p>
+	<div id='product-component-f2c0a80df9e' class="page-wrap" style="margin-bottom: 25px"></div>
+	<p style="font-weight: bold; font-size: 16px">$30</p>
+	<div id='product-component-25970c75b33' class="page-wrap" style="margin-bottom: 25px"></div>
+	<br>
+	<nav class="navbar navbar-expand-sm bg-white justify-content-center">
+	  <ul class="navbar-nav">
+		<li class="nav-item">
+		  <a class="nav-link" href="index.html">h o m e</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="blog.html">c o l l e c t i o n s</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="blog.html">b l o g</a>
+		</li>
+	  </ul>
+	</nav>
+	<img src="insideface.png" width="120" height="120" class="image">
+	<div><br>
+		</div>
+	</div>	 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	<script src="jquery.js"></script>
+  </body>
+</html>
