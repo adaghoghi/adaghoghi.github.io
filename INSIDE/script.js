@@ -10,45 +10,6 @@ function paintIt(){
 	console.log(color)
 }
 
-//$(switchBackground);
-//    var oFReader = new FileReader(),
-//        rFilter = /^(?:image\/bmp|image\/cis\-cod|image\/gif|image\/ief|image\/jpeg|image\/jpeg|image\/jpeg|image\/pipeg|image\/png|image\/svg\+xml|image\/tiff|image\/x\-cmu\-raster|image\/x\-cmx|image\/x\-icon|image\/x\-portable\-anymap|image\/x\-portable\-bitmap|image\/x\-portable\-graymap|image\/x\-portable\-pixmap|image\/x\-rgb|image\/x\-xbitmap|image\/x\-xpixmap|image\/x\-xwindowdump)$/i;
-//
-//    oFReader.onload = function(oFREvent) {
-//        localStorage.setItem('b', oFREvent.target.result);
-//        switchBackground();
-//    };
-//
-//    function switchBackground() {
-//      $('body').css('background-image', "url(" + localStorage.getItem('b') + ')');    
-//    }
-//
-//    function loadImageFile(testEl) {
-//      if (! testEl.files.length) { return; }
-//      var oFile = testEl.files[0];
-//      if (!rFilter.test(oFile.type)) { alert("You must select a valid image file!"); return; }
-//      oFReader.readAsDataURL(oFile);
-//    }
-
-//(function () {
-//    navigator.getMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia);
-//
-//    navigator.getMedia(
-//        // constraints
-//        {video:true, audio:false},
-//
-//        // success callback
-//        function (mediaStream) {
-//            var video = document.getElementsByTagName('video')[0];
-//            video.src = window.URL.createObjectURL(mediaStream);
-//            video.play();
-//        },   
-//        //handle error
-//        function (error) {
-//            console.log(error);
-//        })   
-//})();
-
 // References to all the element we will need.
 var video = document.querySelector('#camera-stream'),
     image = document.querySelector('#snap'),
