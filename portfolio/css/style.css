@@ -101,7 +101,6 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Alegreya Sans', Arial, sans-serif;
-	text-transform: uppercase;
 }
 
 html {
@@ -262,7 +261,6 @@ section {
 }
 
 h2 {
-	text-transform: lowercase;
 	font-size: 4em;
 	margin-bottom: 20px;
 }
@@ -332,4 +330,27 @@ h3 {
 	nav li a {
 		padding: 3px;
 	}
+}
+
+.image {
+    -webkit-animation:spin 8s linear infinite;
+    -moz-animation:spin 8s linear infinite;
+	-ms-animation:spin 8s linear infinite;
+	-o-animation:spin 8s linear infinite;
+    animation:spin 8s linear infinite;
+}
+@-moz-keyframes spin { 
+	100% { 
+		-moz-transform: rotate(360deg); 
+	} 
+}
+@-webkit-keyframes spin { 
+	100% { 
+		-webkit-transform: rotate(360deg); 
+	} 
+}
+@keyframes spin { 
+	100% { 
+		-webkit-transform: rotate(360deg); transform:rotate(360deg); 
+	} 
 }
