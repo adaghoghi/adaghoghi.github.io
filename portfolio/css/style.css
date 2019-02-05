@@ -126,7 +126,7 @@ ul, li {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .header-top {
-	background: rgba(0, 47, 77, .3);
+	background: pink;
 	height: 70px;
 	padding: 0 10px;
 	position: fixed;
@@ -246,7 +246,7 @@ nav li:nth-child(even) a:hover {
 
 nav li.active a,
 body.fp-viewing-fifthSection-1 #menu li:last-child a {
-  background: #453659;
+  background: #ff6699;
 }
   
 
