@@ -14,71 +14,10 @@
 	<link rel="shortcut icon" type="image/png" href="insideface.png"/>
     
     <title>INSIDE</title>
-	  
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130018093-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-130018093-1');
-	</script>
-	
-	<script>
-    window.addEventListener("load", function() {
-      var camera = document.getElementById("camera");
-      var play = document.getElementById("play");
-      var pause = document.getElementById("pause");
-      var stop = document.getElementById("stop");
-      var constraints = {audio:true, video:true};
-
-      function success(stream) {
-        camera.src = stream;
-        camera.play();
-        disableButtons(true, false, false);
-      }
-
-      function failure(error) {
-        alert(JSON.stringify(error));
-      }
-
-      function disableButtons(disPlay, disPause, disStop) {
-        play.disabled = disPlay;
-        pause.disabled = disPause;
-        stop.disabled = disStop;
-      }
-
-      disableButtons(true, true, true);
-
-      if (navigator.getUserMedia)
-        navigator.getUserMedia(constraints, success, failure);
-      else
-        alert("Your browser does not support getUserMedia()");
-
-      play.addEventListener("click", function() {
-        disableButtons(true, false, false);
-        camera.play();
-      }, false);
-
-      pause.addEventListener("click", function() {
-        disableButtons(false, true, false);
-        camera.pause();
-      }, false);
-
-      stop.addEventListener("click", function() {
-        disableButtons(true, true, true);
-        camera.pause();
-        camera.src = "";
-      }, false);
-    }, false);
-  </script>
-
   </head>
   <body>
-	  <div class="wait">
-	  <br>
 	 <div class="page-wrap">
+		 <br>
 		<img src="insideface.png" width="120" height="120" class="image">
 	  <br>
 	<br>
@@ -96,23 +35,7 @@
 		</li>
 	  </ul>
 	</nav>
-<!--
-	<div id="buttonwrapper">
-	<input id="test" type="file" onchange="loadImageFile(this)"/>
-	</div>
--->
-	<center><video autoplay="true" id="a" style="width: 500px; height: 500px;"></video></center>
-	<center style="margin-bottom: 60px"><p><b>you, are part of inside</b></p></center>
-	<input type="button" value="background color" onclick="paintIt()" class="page-wrap" id="button" style="font-family: 'Courier New'; width: 50%; text-align: center; text-decoration: none; border-radius: 15px; box-shadow: 0 5px black">
 	<div class="container">
-
-<div id="myOnlineCamera">
-</div>
-		 <br>
-		 <br>
-		 <br>
-		 <br>
-		 <br>
     <a href="letsgohome.html"><img src="letsgohome.png" height="50" class="hover"></a>
 	 <br>
 	 <br>
@@ -167,18 +90,5 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
 	<script src="jquery.js"></script>
-	<script type="text/javascript">
- navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUsermedia || navigator.oGetUserMedia;
- if(navigator.getUserMedia){
-  navigator.getUserMedia({video: true}, handleVideo,videoError);
- }
- function handleVideo(stream){
-  document.querySelector('#a').src = window.URL.createObjectURL(stream);
- }
- function videoError(e){
-  alert("erro");
- }
-</script>
-	  </div>
   </body>
 </html>
