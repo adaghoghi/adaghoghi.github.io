@@ -17,7 +17,7 @@ h3 {
 	font-family: "Helvetica"
 }
 
-#video {
+.video {
 	object-fit: initial;
 	width="960px";
 	height="520px";
