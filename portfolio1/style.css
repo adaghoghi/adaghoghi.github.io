@@ -1,0 +1,258 @@
+html,body { 
+	
+	height:100%; 
+
+	display: flex;
+}
+
+
+body {
+	background-color: #6800FF;
+}
+
+h3 {
+	font-family: 'vt323';
+	font-size: 8vw;
+}
+
+h2 {
+	font-family: 'vt323';
+	font-size: 2.471vw;
+}
+
+h1 {
+	font-family: 'vt323';
+	font-size: 2.3vw;
+}
+
+p {
+	font-family: 'vt323';
+	font-size: 1.5vw;
+}
+
+.sidebar {
+
+  @include box-sizing(border-box);
+  float: left;
+  width: 15%;
+  height: 100%;
+  padding: 1em;
+  background-color: #6800FF;
+  vertical-align: text-bottom;
+  border-right-color: green;
+  border-top-width: 5px;
+  flex-grow: 1;
+  
+	  
+}
+
+.sidebar h2 {
+
+	vertical-align: text-bottom;
+
+}
+
+.sidebar h1 {
+	text-align: center;
+	margin-top: 13vw;
+		color: #FF9919;
+}
+
+.sidebar p {
+	text-align: center;
+	margin-top: 11vw; 
+	color: #FF9919;
+}
+
+.sidebar a:link {
+  color: #FF9919;
+  background-color: transparent;
+  text-decoration: none;
+}
+.sidebar a:visited {
+  color: #FF9919;
+  background-color: transparent;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+.sidebar a:active {
+  color: #FF9919;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.rotate {
+
+  transform: rotate(-270deg);
+
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(-270deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-270deg);
+
+  /* IE */
+  -ms-transform: rotate(-270deg);
+
+  /* Opera */
+  -o-transform: rotate(-270deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.container {
+	padding-top: 0.1vw;
+}
+
+.container h3 {
+	padding-left: 15px;
+}
+
+.container h1 {
+	color: #FF9919
+}
+
+.container p {
+	color: #FF9919;
+}
+
+.container a {
+	color: #FF9919;
+	font-family: 'vt323';
+	font-size: 2vw;
+}
+
+.imgcon {
+	width: 35%;
+	height: auto;
+}
+.vl {
+  border-left: 4px solid grey;
+  height: 100%;
+  position: absolute;
+  margin-left: 4
+}
+
+a:link {
+  color: #FF9919;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #FF9919;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: #FF9919;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#spinner {
+  text-align: center;
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+#spinner::before,
+#spinner::after {
+  content: "alvand daghoghi";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: rotateY(0.25deg);
+  transform-origin: 0 50%;
+}
+#spinner::after {
+  transform: rotateY(-0.25eg);
+  transform-origin: 100% 50%;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+@keyframes depth {
+  0% { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black, 6px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black, -6px 0 black; }
+  100% { text-shadow: 0 0 black; }
+}
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
