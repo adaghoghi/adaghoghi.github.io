@@ -7,26 +7,26 @@ html,body {
 
 
 body {
-	background-color: #6800FF;
+	background-color: #EFE2BA;
 }
 
 h3 {
-	font-family: 'vt323';
+	font-family: 'Times New Roman';
 	font-size: 8vw;
 }
 
 h2 {
-	font-family: 'vt323';
+	font-family: 'Times New Roman';
 	font-size: 2.471vw;
 }
 
 h1 {
-	font-family: 'vt323';
+	font-family: 'Times New Roman';
 	font-size: 2.3vw;
 }
 
 p {
-	font-family: 'vt323';
+	font-family: 'Times New Roman';
 	font-size: 1.5vw;
 }
 
@@ -37,7 +37,7 @@ p {
   width: 15%;
   height: 100%;
   padding: 1em;
-  background-color: #6800FF;
+  background-color: #EFE2BA;
   vertical-align: text-bottom;
   border-right-color: green;
   border-top-width: 5px;
@@ -55,22 +55,22 @@ p {
 .sidebar h1 {
 	text-align: center;
 	margin-top: 13vw;
-		color: #FF9919;
+		color: #4056A1;
 }
 
 .sidebar p {
 	text-align: center;
 	margin-top: 11vw; 
-	color: #FF9919;
+	color: #4056A1;
 }
 
 .sidebar a:link {
-  color: #FF9919;
+  color: #4056A1;
   background-color: transparent;
   text-decoration: none;
 }
 .sidebar a:visited {
-  color: #FF9919;
+  color: #4056A1;
   background-color: transparent;
   text-decoration: none;
 }
@@ -80,7 +80,7 @@ p {
   text-decoration: none;
 }
 .sidebar a:active {
-  color: #FF9919;
+  color: #4056A1;
   background-color: transparent;
   text-decoration: none;
 }
@@ -118,17 +118,17 @@ p {
 }
 
 .container h1 {
-	color: #FF9919
+	color: #4056A1;
 }
 
 .container p {
-	color: #FF9919;
-	font-family: 'vt323';
+	color: #4056A1;
+	font-family: 'Times New Roman';
 }
 
 .container a {
-	color: #FF9919;
-	font-family: 'vt323';
+	color: #4056A1;
+	font-family: 'Times New Roman';
 	font-size: 2vw;
 }
 
@@ -144,12 +144,12 @@ p {
 }
 
 a:link {
-  color: #FF9919;
+  color: #4056A1;
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: #FF9919;
+  color: #4056A1;
   background-color: transparent;
   text-decoration: none;
 }
@@ -159,7 +159,7 @@ a:hover {
   text-decoration: none;
 }
 a:active {
-  color: #FF9919;
+  color: #4056A1;
   background-color: transparent;
   text-decoration: none;
 }
